@@ -110,8 +110,7 @@ if(isset($_GET['page']) ) {
 					</div>
 
 					<div class="footer-col col-sm-4">
-						<p><a href="#">Mentions légales</a></p>
-						<p><a href="#">Nous contacter</a></p>
+						<p><a href="index.php?page=contact">Nous contacter</a></p>
 					</div>
 
 					<div class="footer-col col-sm-4">
