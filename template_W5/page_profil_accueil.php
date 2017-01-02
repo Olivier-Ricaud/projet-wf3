@@ -6,8 +6,6 @@
         </div>
     </div>
 
-
-
 	<div class="row">
 
 		<div class="col-sm-3 col-md-2">
@@ -16,12 +14,12 @@
 					<h3>Mon profil</h3>
 					<img src="assets/img/Anais1.jpg" alt="photo de profil" class="img-circle" data-toggle="dropdown" width="150" height="150">
 					<p>Pseudo</p>
-					<p>Nom Prénom</p>
+					<p>Nom / Prénom</p>
 					<p>Localisation</p>
 					<p>Niveau de joueur</p>
-					<p>Sexe</p>
-					<p><a href="">Mes événements</a></p>
-					<p><a href="">Editer mon profil</a></p>
+					<p>Sexe / Age</p>
+					<p><a href="index.php?page=profil">Mes événements</a></p>
+					<p><a href="index.php?page=profil-editer">Editer mon profil</a></p>
 				</aside>
 			</div> <!-- End of row -->
 		</div> <!-- End of sm-2 -->

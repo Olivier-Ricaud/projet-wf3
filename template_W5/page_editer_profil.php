@@ -18,8 +18,8 @@
 					<p>Localisation</p>
 					<p>Niveau de joueur</p>
 					<p>Sexe / Age</p>
-					<p><a href="">Mes événements</a></p>
-					<p><a href="">Editer mon profil</a></p>
+					<p><a href="index.php?page=profil">Mes événements</a></p>
+					<p><a href="index.php?page=profil-editer">Editer mon profil</a></p>
 				</aside>
 			</div> <!-- End of row -->
 		</div> <!-- End of sm-2 -->
