@@ -42,12 +42,12 @@
 			<div class="form-group row">
 				<label for="lieu" class="col-xs-12 col-sm-2 col-form-label">Votre département </label>
 				<div class="col-xs-12 col-sm-8">
-					<select class="form-control" name="lieu">
-						<option value="0">Choisissez votre département</option>
-						<option value="Val_d_oise">Val d'Oise</option>
-						<option value="Paris">Paris</option>
-					</select>
-				</div>
+					<input type="text" class="form-control" name="lieu" list="departement">
+					<datalist id="departement">
+						<option value="75 - Paris"></option>
+						<option value="95 - Val-d-Oise"></option>
+					</datalist>
+				</div>	
 			</div> <!-- End form-group row-->
 
 			<div class="form-group row">
