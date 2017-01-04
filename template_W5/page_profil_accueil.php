@@ -1,34 +1,38 @@
 <main class= container-fluid>
 	
     <div class="row">
-        <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-1">
+        <div class="col-sm-9 col-sm-offset-3">
           <h1>Mes événements</h1>
         </div>
     </div>
-
+	
 	<div class="row">
-
-		<div class="col-sm-3 col-md-2">
-			<div class="row">
-				<aside id="profil" class="col-md-12">
-					<h3>Mon profil</h3>
-					<img src="assets/img/Anais1.jpg" alt="photo de profil" class="img-circle" data-toggle="dropdown" width="150" height="150">
-					<p>Pseudo</p>
-					<p>Nom / Prénom</p>
-					<p>Localisation</p>
-					<p>Niveau de joueur</p>
-					<p>Sexe / Age</p>
-					<p><a href="index.php?page=profil">Mes événements</a></p>
-					<p><a href="index.php?page=profil-editer">Editer mon profil</a></p>
-				</aside>
-			</div> <!-- End of row -->
-		</div> <!-- End of sm-2 -->
-		
+		<!-- SECTION RESUME DE PROFIL -->
+		<aside class="col-sm-3" id="profil">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="list-group-item-heading">Profil</h4>
+				</div>
+				
+				<div class="panel-body">
+					 <img src="assets/img/Anais1.jpg" alt="photo de profil" class="img-circle" data-toggle="dropdown" width="150" height="150">
+					 <p>Pseudo</p>
+					 <p>Nom / Prénom</p>
+					 <p>Localisation</p>
+					 <p>Niveau de joueur</p>
+					 <p>Sexe / Age</p>
+					 <p><a href="index.php?page=profil">Mes événements</a></p>
+					 <p><a href="index.php?page=profil-editer">Editer mon profil</a></p>
+				</div>
+			</div> <!-- End div panel-->		
+		</aside>
+		<!-- FIN DE SECTION RESUME DE PROFIL -->
+			
+		<!-- SECTION EVENEMENTS A VENIR -->
 		<section class="col-sm-9">
 			<h2>Mes événements à venir</h2>
 
-			<div class= row>
-				<div class=" article col-sm-10 col-sm-offset-1">
+				<figure class="col-sm-10 col-sm-offset-1">
 					<div class="row">
 						<a href="index.php?page=detail">
 							<div class="col-xs-6">
@@ -41,9 +45,9 @@
 							<p>Nombres de joueurs inscrits 1/10</p>
 						</div> 
 					</div>
-				</div>
+				</figure>
 
-				<div class=" article col-sm-10 col-sm-offset-1">
+				<figure class="col-sm-10 col-sm-offset-1">
 					<div class="row">
 						<a href="index.php?page=detail">
 							<div class="col-xs-6">
@@ -56,9 +60,9 @@
 							<p>Nombres de joueurs inscrits 1/10</p>
 						</div> 
 					</div>
-				</div>
+				</figure>
 
-				<div class=" article col-sm-10 col-sm-offset-1">
+				<figure class="col-sm-10 col-sm-offset-1">
 					<div class="row">
 						<a href="index.php?page=detail">
 							<div class="col-xs-6">
@@ -71,15 +75,17 @@
 							<p>Nombres de joueurs inscrits 1/10</p>
 						</div> 
 					</div>
-				</div>
-			</div>
+				</figure>
 		</section>
-
-		<section class="col-sm-9 col-sm-offset-3 col-md-offset-2">
+	</div> <!-- end of row -->
+	<!-- FIN SECTION EVENEMENTS A VENIR -->
+	
+	<!-- SECTION EVENEMENTS TERMINES -->
+	<div class="row">
+		<section class="col-sm-9 col-sm-offset-3">
 			<h2>Mes événements terminés</h2>
 
-			<div class= row>
-				<div class=" article col-sm-10 col-sm-offset-1">
+				<figure class="col-sm-10 col-sm-offset-1">
 					<div class="row">
 						<a href="index.php?page=detail">
 							<div class="col-xs-6">
@@ -92,9 +98,9 @@
 							<p>Nombres de joueurs inscrits 1/10</p>
 						</div> 
 					</div>
-				</div>
+				</figure>
 
-				<div class=" article col-sm-10 col-sm-offset-1">
+				<figure class="col-sm-10 col-sm-offset-1">
 					<div class="row">
 						<a href="index.php?page=detail">
 							<div class="col-xs-6">
@@ -107,9 +113,9 @@
 							<p>Nombres de joueurs inscrits 1/10</p>
 						</div> 
 					</div>
-				</div>
+				</figure>
 
-				<div class=" article col-sm-10 col-sm-offset-1">
+				<figure class="col-sm-10 col-sm-offset-1">
 					<div class="row">
 						<a href="index.php?page=detail">
 							<div class="col-xs-6">
@@ -122,10 +128,10 @@
 							<p>Nombres de joueurs inscrits 1/10</p>
 						</div> 
 					</div>
-				</div>
-			</div>
+				</figure>
 		</section>
-
-	</div> <!-- End of row -->
+	</div> <!-- end of row -->
+	<!-- FIN SECTION EVENEMENTS TERMINES -->
+	
 
 </main> <!-- End of container-fluid-->

@@ -13,6 +13,4 @@ $(function () {
         });
     });
 
-
-
 }); //End of JQuery Code

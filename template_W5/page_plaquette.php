@@ -41,6 +41,32 @@
 		</nav>
 	</header>
 
+	<main class="container-fluid">
+		<section id="carousel" class="row">
+			<div class="carousel slide" data-ride="carousel">
+
+				<div class="carousel-inner">	
+					<div class="item active">
+						<img src="assets/img/futsal1.jpg" alt="Football field one">
+					</div>
+
+					<div class="item">
+						<img src="assets/img/futsal2.jpg" alt="Football field two">
+					</div>
+
+					<div class="item">
+						<img src="assets/img/futsal3.jpg" alt="Football field three">
+					</div>
+				</div> <!-- End carousel inner-->
+			</div> <!-- End  carousel slide-->
+			
+			<div class="title">
+				<h1>WeFive</h1>
+
+			</div>	
+		</section>
+	</main>
+
 	<!-- Footer -->
 	<footer class="footer text-center">
 		<div class="footer-above">
@@ -68,8 +94,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-3x"></i></a>                   
-						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus fa-3x"></i></a>                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter fa-3x"></i></a>                    
+						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-3x"></i></a>
+						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus fa-3x"></i></a>          
+						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter fa-3x"></i></a>              
 						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin fa-3x"></i></a>
 						<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble fa-3x"></i></a>
 						<p>Copyright &copy; 2016 - Webforce3 Project</p>

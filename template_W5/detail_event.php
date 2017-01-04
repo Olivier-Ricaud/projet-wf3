@@ -1,18 +1,12 @@
 <main class="container-fluid">
-
-	<!-- IMAGE DE FOND astuce => https://gist.github.com/petehouston/85dd33210c0764eeae55 "ou"
-	>>> faire un carousel d'une seul image => http://stackoverflow.com/questions/22122111/how-to-display-text-over-an-image-in-bootstrap-3-1 "ou"
-	>>> simplement jouer avec les positions relat/absol -->
-	<section>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<img class="img-responsive" src="assets/img/arena3.png" alt="exemple"> 
+	<section class="row">
+			<div class="imgBackground">
+				<img src="assets/img/futsal2.jpg" alt="exemple"> 
+				<h1 class="title">Titre de l'événement</h1>
 			</div>
-		</div>
 	</section>
 
-	<!-- <div class="col-md-10 col-md-offset-1"> -->
-	<!-- Détail de l'événement -->
+	<!-- DETAIL EVENEMENTS -->
 	<section class="row">
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-default">
@@ -42,8 +36,6 @@
 				</div>
 			</div>
 
-			<!-- 2nd row: not needed -->
-			<!-- <div class="row"> -->
 			<div class="col-xs-6 col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">tarif</div>
@@ -64,9 +56,9 @@
 					<div class="panel-body">Amateur</div>
 				</div>
 			</div>
-	</section> <!-- End of Row -->
+	</section>
 
-	<!-- Description -->
+	<!-- DESCRIPTION ET MAP -->
 	<section class="row">
 			<div class="col-md-6">
 				<h2>Example body text</h2>
@@ -81,9 +73,8 @@
 			</div>
 	</section>
 
-	<!-- Liste des joueurs -->
 	<section class="row">
-		<!-- Liste des joueurs -->
+		<!-- DEBUT DU TABLEAU DES JOUEURS INSCRITS -->
 		<div class="col-md-7">
 			<table class="table table-striped table-hover ">
 				<thead>
@@ -178,13 +169,14 @@
 						<td>
 							<div class="btn-group">
 								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-									Status <span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#">En attente</a></li>
-										<li><a href="#">Validée</a></li>
-									</ul>
-								</div>
-								<a href="#" class="btn btn-danger">Retirer</a></td>
+								Status <span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">En attente</a></li>
+									<li><a href="#">Validée</a></li>
+								</ul>
+							</div>
+							<a href="#" class="btn btn-danger">Retirer</a>
+						</td>
 					</tr>
 						
 					<tr>
@@ -280,30 +272,56 @@
 				</tbody>
 			</table>
 		</div>
-		<!-- CHAT -->
-		<aside class="col-md-4 col-md-offset-1">
-			<!-- Affichage du TEXT -->
-			<!-- Astuce de l'offset apprise à la fin pour centrer du content , appliquer plus haut -->
-			<!-- 
-			Penser a ajuster les couleurs du chat façon discord:
-			- choisir une font 
-			- .small {colors: moins prononcé;}
-			- mettre le pseudo dans un autre couleur et le faire ressortir
-			- text chat en blanc + retirer les <br>
-			-->
-			<div class="well well-sm">ALEX <span class="small">Today at 10:00</span><br> How are you ?</div>
-			<div class="well well-sm">ALEX <span class="small">Today at 10:01</span><br> Look, I'm fine</div>
+		<!-- FIN DU TABLEAU DES JOUEURS INSCRITS -->
 
-			<!-- Champ d'input -->
-			<div class="form-group">
-				<label class="control-label">Alex</label>
-				<div class="input-group">
-					<input type="text" class="form-control">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button">Send</button>
-					</span>
+		<!-- DEBUT DU MINICHAT -->
+		<aside id="miniChat" class="col-md-4 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>MiniChat</h3>
 				</div>
-			</div>
+
+				<div class="panel-body">
+               		<div class="row">
+               			<div class="col-xs-12">
+               				<span class="text-muted small">Le 12/12/2016</span>
+               			</div>
+               		</div>
+
+               		<div class="row">
+               			<div class="col-xs-12">
+               				<div class="media">
+               					<div class="media-body">
+               						<h4 class="media-heading">Alex
+               							<span class="small pull-right">18:18</span>
+               						</h4>
+               						<p>Message de l'utilisateur</p>
+               					</div>
+               				</div>
+               			</div>
+               		</div>
+               		<hr>
+	            </div>
+
+	           	<div class="panel-footer">
+	               	<form action="" method="post" >
+
+	               		<div class="form-group">
+	               			<input class="form-control" name="pseudo" value="" placeholder="Votre Pseudo..." required>
+	               		</div>
+
+	               		<div class="form-group">
+	               			<textarea class="form-control" name="message" placeholder="Votre message..." required></textarea>
+	               		</div>
+
+	               		<div class="form-group">
+	               			<input type="submit" name="submit" value="Envoyer" class="btn btn-primary pull-right">
+	               		</div>
+	               		<div class="clearfix"></div>
+	               	</form>
+	            </div>
+		    </div>
 		</aside>
+		<!-- FIN DU MINICHAT -->
 	</section>
 </main>

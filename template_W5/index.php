@@ -32,6 +32,10 @@ if(isset($_GET['page']) ) {
 			$fichier = "detail_event.php";
 			break;
 
+		case 'creer':
+			$fichier = "creation_event.php";
+			break;
+
 		case 'feuille-match':
 			$fichier = "feuille_match.php";
 			break;
@@ -65,6 +69,8 @@ if(isset($_GET['page']) ) {
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Extension bootStrap pour gérer l'event click sur les row d'une table & améliorer les inputs files -->
+	<link rel="stylesheet" href="assets/css/jasny-bootstrap.min.css">
 
 </head>
 
@@ -90,7 +96,7 @@ if(isset($_GET['page']) ) {
 					<ul class="nav navbar-nav">
 						<li class="<?= ( $page === 'accueil') ? "active" : "" ?>"><a href="index.php?">Accueil</a></li>
 						<li class="<?= ( $page === 'profil') ? "active" : "" ?>"><a href="index.php?page=profil">Profil</a></li>
-						<li class="<?= ( $page === '') ? "active" : "" ?>"><a href="">Création d'événement</a></li>
+						<li class="<?= ( $page === 'creer') ? "active" : "" ?>"><a href="index.php?page=creer">Création d'événement</a></li>
 					</ul>
 				</div> <!-- End collapse navbar-->
 			</div> <!-- End container-fluid-->
@@ -106,7 +112,7 @@ if(isset($_GET['page']) ) {
 				<div class="row">
 					<div class="footer-col col-sm-4">
 						<p><a href="index.php?page=cgu">CGU</a></p>
-						<p><a href="#">Charte de confidentialité</a></p>
+						<p><a href="index.php?page=charte">Charte de confidentialité</a></p>
 					</div>
 
 					<div class="footer-col col-sm-4">
@@ -138,7 +144,8 @@ if(isset($_GET['page']) ) {
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- <script src="assets/js/script.js"></script> -->
+	<!-- Extension bootStrap pour gérer l'event click sur les row d'une table & améliorer les inputs files -->
+	<script src="assets/js/jasny-bootstrap.min.js"></script>
 
 </body>
 </html>
